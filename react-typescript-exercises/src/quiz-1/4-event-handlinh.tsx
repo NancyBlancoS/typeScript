@@ -10,10 +10,11 @@ export default function EventHandlinh() {
     };
 
     return (
-        <Paper>
+        <Paper sx={{padding:'10px', margin:'10px', width:'300px'}} >
             <h2>Event Handling</h2>
-            {isMessageVisible && <p>Event Handling</p>}
-            <Button onClick={handleClick}>Message</Button>
+            <Button variant="contained" onClick={handleClick}>Message</Button>
+            {isMessageVisible && <p>Neque porro quisquam est qui dolorem 
+                                    ipsum quia dolor sit amet, consectetur, adipisci velit...</p>}
         </Paper>
     )
 }

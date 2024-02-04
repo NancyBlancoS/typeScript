@@ -22,7 +22,7 @@ function DisplayInput({input}: InputType) {
     };
     
     return (
-    <Paper>
+    <Paper sx={{padding:'10px', margin:'10px', width:'300px'}} >
         <h2>Display Input</h2>
         {value()}
     </Paper>

@@ -1,20 +1,20 @@
 import React from 'react'
 
-interface ListProps<T>{
-    items: T[]
+import { Paper } from '@mui/material';
+interface ListProps<T> {
+    items: T[];
+    renderItem: (item: T) => React.ReactNode;
 }
 
-function List<T>({items}: ListProps<T>) {
+export default function List<T>({ items, renderItem }: ListProps<T>) {
     return (
-        <div>
-            <h2>Generic List</h2>
-            {/* <ul>
-                {items.map((item, index) => (
-                    <li key={index}> {item} </li>
-                    ))}
-            </ul> */}
-        </div>
-    )
+    <Paper sx={{padding:'10px', margin:'10px', width:'300px'}} >
+        <ul>
+            <h2>Generic List Component</h2>
+            {items.map((item, index) => (
+                <li key={index}>{renderItem(item)}</li>
+                ))}
+        </ul>
+    </Paper>
+    );
 }
-
-export default List;

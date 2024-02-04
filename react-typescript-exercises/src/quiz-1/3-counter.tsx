@@ -17,11 +17,11 @@ export default function Counter() {
     };
 
     return (
-        <Paper>
+        <Paper sx={{padding:'10px', margin:'10px', width:'300px'}} >
             <h2>Counter</h2>
             <p>Count: {counterState}</p>
-            <Button variant="contained" onClick={incrementCount}>Increment</Button>
-            <Button variant="outlined" onClick={decrementCount}>Decrement</Button>
+            <Button variant="contained" onClick={incrementCount} sx={{marginRight:'25px'}}>Increment</Button>
+            <Button variant="outlined" onClick={decrementCount} >Decrement</Button>
         </Paper>
     );
 
