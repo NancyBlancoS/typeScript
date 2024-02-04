@@ -2,7 +2,9 @@ import React from 'react';
 
 import Paper from '@mui/material/Paper';
 
-import { Tuple, Counter, OptionalMessage, DisplayInput, TypeScriptBasics, InterfaceProps, List ,EventHandlinh, Theme, ReadOnly } from '../quiz-1';
+import { Counter, DisplayInput, EventHandlinh, InterfaceProps, List, OptionalMessage, ReadOnly, Tuple, TypeScriptBasics, Theme } from '../quiz-1';
+import { AppBarText, Components } from '../quiz-2/theme';
+
 import { Grid } from '@mui/material';
 
 function App() {
@@ -37,9 +39,9 @@ function App() {
         <TypeScriptBasics basics={typeScriptBasics} />
         <InterfaceProps {...userProps} />
         <Counter />
-        <EventHandlinh />
+        <EventHandlinh title= 'Event Handling' buttonName='Message' message='Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...'/>
         <Grid>
-          <OptionalMessage message='Hola, esto es un mensaje'/>
+          <OptionalMessage message='Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...'/>
           <OptionalMessage />
         </Grid>
       </Grid>
@@ -49,6 +51,9 @@ function App() {
         <ReadOnly items={items}/>
         <DisplayInput input={input}/>
         <Tuple />
+      </Grid>
+      <Grid>
+        <Components date='04/02/2024' name='Nancy Blanco Suarez' career='Electronic Engineering' age='22'/>
       </Grid>
     </Paper>
   );
