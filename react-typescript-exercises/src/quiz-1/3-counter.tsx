@@ -5,7 +5,6 @@ import Paper from '@mui/material/Paper';
 
 export default function Counter() {
 
-
     const [counterState, setCounterState] = React.useState<number>(0);
 
     const incrementCount = () => {

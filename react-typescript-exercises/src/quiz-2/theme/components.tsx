@@ -1,7 +1,6 @@
-import { EventHandlinh } from '../../quiz-1';
 import AppBarText from './appBar';
 import theme from './theme';
-import { Box, Button, Chip, Grid, Paper } from "@mui/material";
+import { Button, Chip, Grid, Paper } from "@mui/material";
 
 
 interface persona{
@@ -30,7 +29,7 @@ export default function Components({name, date, career, age}:persona) {
                 <h2>{age}</h2>
             </div>
 
-            <Button>Button</Button>
+            <Button color='error'>Button</Button>
         </Paper>
     )
 }
